@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<title>Hoja de Vida — Estudiante de Sistemas</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<header class="site-header">
+		<div class="container header-inner">
+			<div class="profile">
+				<img src="../mi_foto.jfif" alt="Foto de perfil" class="profile-photo">
+			</div>
+			<div class="intro">
+				<h1>Juan Fernando Castañeda Agudelo</h1>
+				<p class="tagline">Estudiante de Ingeniería de Sistemas — Desarrollo Web (HTML &amp; CSS)</p>
+				<p class="contact">
+					<strong>Email:</strong> <a href="mailto:juanfercasta25@gmail.com">juanfercasta25@gmail.com</a>
+					<br>
+					<strong>Teléfono:</strong> <em>+57 3135122005</em>
+				</p>
+				<p class="social">
+					<a href="https://github.com/usuario" target="_blank">GitHub</a> ·
+					<a href="https://www.linkedin.com/in/usuario" target="_blank">LinkedIn</a>
+				</p>
+			</div>
+		</div>
+	</header>
+
+	<main class="container">
+		<section id="perfil" class="card">
+			<h2>Perfil</h2>
+			<p>Soy un estudiante de Sistemas con interés en desarrollo web. Tengo conocimientos básicos de HTML y CSS y aprendo constantemente nuevas tecnologías frontend.</p>
+		</section>
+
+		<section id="experiencia" class="card">
+			<h2>Experiencia Laboral</h2>
+			<article>
+				<h3>Prácticas Frontend — Empresa Ejemplo</h3>
+				<p><strong>Periodo:</strong> Ene 2024 — Jun 2024</p>
+				<p>Participé en tareas de maquetación HTML/CSS, creación de componentes responsivos y corrección de estilos para compatibilidad móvil.</p>
+			</article>
+		</section>
+
+		<section id="educacion" class="card">
+			<h2>Educación</h2>
+			<ul>
+				<li><strong>Ingeniería de Sistemas</strong> — Universidad Ejemplo (En curso)</li>
+				<li>Certificación: Curso básico de HTML y CSS</li>
+			</ul>
+		</section>
+
+		<section id="certificaciones" class="card">
+			<h2>Certificaciones</h2>
+			<ul>
+				<li>Curso: Introducción a HTML/CSS</li>
+				<li>Curso: Buenas prácticas de accesibilidad web</li>
+			</ul>
+		</section>
+
+		<section id="contacto" class="card">
+			<h2>Contacto</h2>
+			<p><strong>Correo:</strong> <a href="mailto:juanfercasta25@gmail.com">juanfercasta25@gmail.com</a></p>
+			<p><strong>Teléfono:</strong> <em>3135122005</em></p>
+			<p>Redes sociales: <a href="https://github.com/juanfer2006" target="_blank">GitHub</a>, <a href="https://www.linkedin.com/in/juan-fernando-casta%C3%B1eda-87b4483ab/" target="_blank">LinkedIn</a></p>
+		</section>
+
+		<section id="resumen" class="card">
+			<h2>Resumen: etiquetas, atributos y CSS</h2>
+			<h3>Etiquetas usadas</h3>
+			<ul>
+				<li><strong>html</strong>: raíz del documento HTML.</li>
+				<li><strong>head</strong>, <strong>meta</strong>, <strong>title</strong>: metadatos y título.</li>
+				<li><strong>link</strong>: incluye la hoja de estilos.</li>
+				<li><strong>body</strong>: contenido visible de la página.</li>
+				<li><strong>header, main, section, article</strong>: elementos semánticos para estructura.</li>
+				<li><strong>h1..h3, p, ul, li</strong>: encabezados, párrafos y listas.</li>
+				<li><strong>img</strong>: imágenes (foto de perfil).</li>
+				<li><strong>a</strong>: enlaces (redes sociales, mailto).</li>
+				<li><strong>strong, em</strong>: enfatizar texto (negrita y cursiva).</li>
+			</ul>
+
+			<h3>Atributos usados</h3>
+			<ul>
+				<li><strong>src</strong> (img): ruta de la imagen.</li>
+				<li><strong>alt</strong> (img): texto alternativo para accesibilidad.</li>
+				<li><strong>href</strong> (a, link): URL destino del enlace.</li>
+				<li><strong>target</strong> (a): donde abrir el enlace; <em>_blank</em> abre en nueva pestaña.</li>
+				<li><strong>rel</strong> (opcional para enlaces externos, ej. <code>rel="noopener noreferrer"</code>).</li>
+				<li><strong>class / id</strong>: identificadores para CSS/JS.</li>
+			</ul>
+
+			<h3>CSS (definiciones breves)</h3>
+			<ul>
+				<li><strong>selector</strong>: selecciona elementos HTML para aplicar reglas.</li>
+				<li><strong>propiedad: valor</strong>: define apariencia, p. ej. <code>color: #333;</code>.</li>
+				<li><strong>Box model</strong>: margen, borde, relleno y contenido influyen en el tamaño.</li>
+				<li><strong>Flexbox</strong>: layout flexible para alinear y distribuir elementos.</li>
+				<li><strong>Media queries</strong>: reglas que se aplican según el tamaño de pantalla.</li>
+			</ul>
+		</section>
+
+		<section id="analisis-css" class="card">
+			<h2>Análisis del CSS aplicado</h2>
+			<p>El CSS de esta carpeta (<code>ia/style.css</code>) está pensado para ser simple y educativo:</p>
+			<ul>
+				<li>Usa un contenedor central con <code>max-width</code> para lectura cómoda.</li>
+				<li>La cabecera utiliza <code>display: flex</code> para alinear la foto y la información.</li>
+				<li>Las tarjetas tienen sombras ligeras y padding para separar visualmente secciones.</li>
+				<li>Incluye una media query para pantallas pequeñas que apila la cabecera verticalmente.</li>
+			</ul>
+			<p>Conclusión: el CSS es limpio, accesible y fácil de expandir. Para mejorar, se puede añadir variables CSS, un sistema de colores y mejor soporte para impresión.</p>
+		</section>
+
+		<section id="deploy" class="card">
+			<h2>Instrucciones para subir a producción (GitHub Pages)</h2>
+			<ol>
+				<li>Inicializa un repositorio Git en la carpeta del proyecto si no existe.</li>
+				<li>Agrega, commitea y sube al repositorio remoto en GitHub.</li>
+				<li>En la configuración del repositorio en GitHub, activa GitHub Pages desde la rama <em>main</em> o <em>gh-pages</em> y selecciona la carpeta raíz o la carpeta donde está el CV.</li>
+				<li>La página estará disponible en la URL indicada por GitHub Pages.</li>
+			</ol>
+		</section>
+	</main>
+
+	<footer class="site-footer">
+		<div class="container">Hoja de vida generada con HTML y CSS — Ejemplo educativo</div>
+	</footer>
+</body>
+</html>
